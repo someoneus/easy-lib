@@ -36,31 +36,31 @@ The First argument is the Tab name put any string there and it will become your 
 # Creating a Button
 I made this one very easy to use for you
 
-```easyCreateButton({
+`easyCreateButton({
     Name = "Click",
     Callback = function()
         --The function that takes place when the button is clicked
 
     end
-})```
+})`
 
 Below the Callback is your function, put any code there and it should execute on pressed
 
 # Creating a Toggle
 
-```easyCreateToggle({
+`easyCreateToggle({
     Name = "Toggle",
     Callback = function(Value)
     -- The function that takes place when toggled on or off
 
     end
-})```
+})`
 
 The argument (Value) is the state of the toggle. True = Toggled On, False = Toggled Off
 
 # Creating a Label
 
-```easyCreateLabel("LabelText")```
+`easyCreateLabel("LabelText")`
 
 Label is just a line of Text that you could change
 
