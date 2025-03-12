@@ -44,7 +44,7 @@ I made this one very easy to use for you
 
 ```
 easyCreateButton({
-    Name = "Click",
+    Name = "Button",
     Callback = function()
         --The function that takes place when the button is clicked
 
@@ -82,4 +82,4 @@ Label is just a line of Text that you can change
 easyUpdateLabel("UpdatedText")
 ```
 
-Update your latest created Label
+Updates your latest created Label
