@@ -1,4 +1,4 @@
-
+easy = {}
 easy.Main = {}
 easy.Components = {}
 task.spawn(function()
@@ -316,7 +316,7 @@ function easy.Components:UpdateLabel(msg)
     return easy.Components
 end
 
-function easy.ComponentsCreateInput(txtoption)
+function easy.Components:CreateInput(txtoption)
     if txtoption then
         local frame = Instance.new("Frame")
         frame.Parent = lastCreatedFrame
