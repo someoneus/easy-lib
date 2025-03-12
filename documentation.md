@@ -15,4 +15,5 @@ Easy Library offers a small amount of elements that people mostly use
 ---
 # Booting up the Library
 Before you can do anything you need to put this on the first line of your script!
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/master/refs/heads/main/cartruiner.lua"))()```
+
+# ```loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua?token=GHSAT0AAAAAAC7WQSHPE27DKHASA2KVXEKOZ6RKKHQ"))()```
