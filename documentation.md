@@ -17,7 +17,7 @@ ___
 Before you can do anything you need to put this on the first line of your script!
 
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua"))()
+local EasyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua"))()
 ```
 ---
 ---
@@ -25,7 +25,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/re
 This window is the main frame that puts all of your components together!
 
 ```
-easyCreateWindow("Title")
+Local Window = EasyLib:CreateWindow("Title")
 ```
 
 The first argument is a title string, put any string there and it will become your title
@@ -36,7 +36,7 @@ The first argument is a title string, put any string there and it will become yo
 A Tab is like a room to your components, splitting them into groups
 
 ```
-easyCreateTab("TabName")
+local Tab = EasyLib:CreateTab("TabName")
 ```
 
 The First argument is the Tab name put any string there and it will become your Tab name
@@ -46,7 +46,7 @@ The First argument is the Tab name put any string there and it will become your 
 I made this one very easy to use for you
 
 ```
-easyCreateButton({
+EasyLib:CreateButton({
     Name = "Button",
     Callback = function()
         --The function that takes place when the button is clicked
@@ -61,7 +61,7 @@ Below the Callback is your function, put any code there and it should execute on
 # Creating a Toggle
 
 ```
-easyCreateToggle({
+EasyLib:CreateToggle({
     Name = "Toggle",
     Callback = function(Value)
     -- The function that takes place when toggled on or off
@@ -76,7 +76,7 @@ The argument (Value) is the state of the toggle. True = Toggled On, False = Togg
 # Creating a Label
 
 ```
-easyCreateLabel("LabelText")
+EasyLib:CreateLabel("LabelText")
 ```
 
 Label is just a line of Text that you can change
@@ -85,7 +85,7 @@ Label is just a line of Text that you can change
 # Updating a Label
 
 ```
-easyUpdateLabel("UpdatedText")
+EasyLib:UpdateLabel("UpdatedText")
 ```
 
 Updates your latest created Label
