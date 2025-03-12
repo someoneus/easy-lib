@@ -1,9 +1,10 @@
 
-
+easy.Main = {}
+easy.Components = {}
 task.spawn(function()
     warn("EasyLibrary Is Booting")
     end)
-    function easyCreateWindow(name, x, y)
+    function easy.Main:CreateWindow(name, x, y)
         local name = name or "EasyLibrary"
         local core = game:GetService("CoreGui")
         local dupe = core:FindFirstChild("EasyLib: "..name)
@@ -191,7 +192,7 @@ end)
 
 local lastCreatedFrame = nil
 
-function easyCreateTab(name)
+function easy.Components:CreateTab(name)
     local tab = Instance.new("TextButton")
     tab.Text = name or "Tab"
     tab.Parent = bar
@@ -238,9 +239,10 @@ function easyCreateTab(name)
     end)
     
     lastCreatedFrame = frame
+    return easy.Components
 end
 
-function easyCreateLabel(text)
+function easy.Components:CreateLabel(text)
     if lastCreatedFrame then
         local label = Instance.new("TextLabel")
         label.Parent = lastCreatedFrame
@@ -257,9 +259,10 @@ function easyCreateLabel(text)
         corner.Parent = label
         lastCreatedLabel = label
     end
+    return easy.Components
 end
 
-function easyCreateButton(options)
+function easy.Components:CreateButton(options)
     if lastCreatedFrame then
         local button = Instance.new("TextButton")
         button.Parent = lastCreatedFrame
@@ -302,16 +305,18 @@ function easyCreateButton(options)
         end
     end)
 end
+    return easy.Components
 end
 
-function easyUpdateLabel(msg)
+function easy.Components:UpdateLabel(msg)
     if lastCreatedLabel then
         local label = lastCreatedLabel
         label.Text = msg
     end
+    return easy.Components
 end
 
-function easyCreateInput(txtoption)
+function easy.ComponentsCreateInput(txtoption)
     if txtoption then
         local frame = Instance.new("Frame")
         frame.Parent = lastCreatedFrame
@@ -348,9 +353,10 @@ function easyCreateInput(txtoption)
             end
         end)
     end
+    return easy.Components
 end
 
-function easyCreateToggle(option)
+function easy.Components:CreateToggle(option)
     local frame = Instance.new("Frame")
     frame.Parent = lastCreatedFrame
     frame.Size = UDim2.new(1, 0, 0.15, 0)
@@ -437,8 +443,9 @@ function easyCreateToggle(option)
     anim2:Play()
     end
     end)
+    return easy.Components
 end
-
+return easy.Main
 --[[
 
 # Thank you
