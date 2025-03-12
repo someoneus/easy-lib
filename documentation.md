@@ -16,12 +16,16 @@ Easy Library offers a small amount of elements that people mostly use
 # Booting up the Library
 Before you can do anything you need to put this on the first line of your script!
 
-`loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua"))()`
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua"))()
+```
 
 # Creating a Window
 This window is the main frame that puts all of your components together!
 
-```easyCreateWindow("Title")```
+```
+easyCreateWindow("Title")
+```
 
 The first argument is a title string, put any string there and it will become your title
 
@@ -29,14 +33,17 @@ The first argument is a title string, put any string there and it will become yo
 # Creating a Tab
 A Tab is like a room to your components, splitting them into groups
 
-```easyCreateTab("TabName")```
+```
+easyCreateTab("TabName")
+```
 
 The First argument is the Tab name put any string there and it will become your Tab name
 
 # Creating a Button
 I made this one very easy to use for you
 
-```easyCreateButton({
+```
+easyCreateButton({
     Name = "Click",
     Callback = function()
         --The function that takes place when the button is clicked
@@ -49,7 +56,8 @@ Below the Callback is your function, put any code there and it should execute on
 
 # Creating a Toggle
 
-```easyCreateToggle({
+```
+easyCreateToggle({
     Name = "Toggle",
     Callback = function(Value)
     -- The function that takes place when toggled on or off
@@ -62,12 +70,16 @@ The argument (Value) is the state of the toggle. True = Toggled On, False = Togg
 
 # Creating a Label
 
-`easyCreateLabel("LabelText")`
+```
+easyCreateLabel("LabelText")
+```
 
 Label is just a line of Text that you could change
 
 # Updating a Label
 
-```easyUpdateLabel("UpdatedText")```
+```
+easyUpdateLabel("UpdatedText")
+```
 
 Update your latest created Label
