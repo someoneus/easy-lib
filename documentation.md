@@ -5,7 +5,7 @@ This library is Very Simple, easy and well optimized
 
 With both Mobile and PC supports
 
-This library is very easy and Quick to use
+Below is the full tutorial on how to use it
 
 
 
