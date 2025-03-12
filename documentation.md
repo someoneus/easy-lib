@@ -16,4 +16,4 @@ Easy Library offers a small amount of elements that people mostly use
 # Booting up the Library
 Before you can do anything you need to put this on the first line of your script!
 
-`https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua`
+### `loadstring(game:HttpGet("https://raw.githubusercontent.com/someoneus/easy-lib/refs/heads/main/source.lua"))()`
