@@ -7,12 +7,12 @@ With both Mobile and PC supports
 
 This library is very easy and Quick to use
 
-Easy Library offers a small amount of elements that people mostly use
----
+
+___
 ### Please keep in mind that this is my first library, Expect Bugs 
----
----
----
+___
+___
+___
 # Booting up the Library
 Before you can do anything you need to put this on the first line of your script!
 
