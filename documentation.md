@@ -8,7 +8,7 @@ With both Mobile and PC supports
 This library is very easy and Quick to use
 
 
-___
+
 ### Please keep in mind that this is my first library, Expect Bugs 
 ___
 ___
