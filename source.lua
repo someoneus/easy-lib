@@ -19,7 +19,7 @@ function Components:CreateWindow(self, name, x, y)
 
     local window = Instance.new("Frame")
     window.Parent = gui
-    window.Size = UDim2.new(0, x, 0, y)
+    window.Size = UDim2.new(x, 0, y, 0)
     window.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
     window.BackgroundTransparency = 0.1
 
